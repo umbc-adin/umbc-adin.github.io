@@ -30,6 +30,7 @@
     <p>My first paragraph.</p>
     <br>
     <div id="mapid"></div>
+    <div id="latLon"></div>
     
     <script>
       var mymap = L.map('mapid').setView([39.0941938,-77.2027823], 13);
@@ -52,11 +53,11 @@
       
       circle.bindPopup("I am a circle.");
       
-      function onMapClick(e) {
-        alert("You clicked the map at " + e.latlng);
+      function onMapHover(e) {
+        document.getElementById("latLon").innerHTML = e.latlng;
       }
 
-      mymap.on('click', onMapClick);
+      mymap.on('hover', onMapHover);
       
     </script>
   </body>

@@ -20,7 +20,7 @@
     <div id="mapid"></div>
     
     <script>
-      var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+      var mymap = L.map('mapid').setView(39.0941938,-77.2027823], 13);
       
       L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -28,7 +28,7 @@
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'your.mapbox.access.token'
+    accessToken: 'pk.eyJ1IjoidW1iYy1hZGluIiwiYSI6ImNrOHZ3OHRydDBhc20zbXNiazY4dDB5czYifQ.u1x2tCcnsOg5EYsCAyxBCw'
 }).addTo(mymap);
     </script>
   </body>

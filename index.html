@@ -42,6 +42,13 @@
     zoomOffset: -1,
     accessToken: 'pk.eyJ1IjoidW1iYy1hZGluIiwiYSI6ImNrOHZ3OHRydDBhc20zbXNiazY4dDB5czYifQ.u1x2tCcnsOg5EYsCAyxBCw'
 }).addTo(mymap);
+      
+      var circle = L.circle([39.0941938,-77.2027823], {
+        color: 'blue',
+        fillColor: '#f03',
+        fillOpacity: 0.5,
+        radius: 500
+      }).addTo(mymap);
     </script>
   </body>
 </html>

@@ -57,14 +57,9 @@
         var newLatLng = String(e.latlng).replace("LatLng(", "").replace(")", "")
         document.getElementById("latLon").innerHTML = newLatLng;
       }
-      
-      function onMapLeave(e) {
-        document.getElementById("latLon").innerHTML = "";
-      }
 
       mymap.on('mousemove', onMapHover);
-      
-      mymap.on('mouseleave', onMapLeave);
+     
       
     </script>
   </body>

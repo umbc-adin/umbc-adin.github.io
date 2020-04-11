@@ -54,10 +54,17 @@
       circle.bindPopup("I am a circle.");
       
       function onMapHover(e) {
-        document.getElementById("latLon").innerHTML = e.latlng;
+        var newLatLng = str(e.latlng).replace("LatLng(", "").replace(")", "")
+        document.getElementById("latLon").innerHTML = newLatLng;
+      }
+      
+      function onMapLeave(e) {
+        document.getElementById("latLon").innerHTML = "";
       }
 
       mymap.on('mouseover', onMapHover);
+      
+      mymap.on('mouseleave', onMapLeave);
       
     </script>
   </body>
